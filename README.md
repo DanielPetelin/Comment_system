@@ -1,2 +1,2 @@
 # Система комментариев
-https://danielpetelin.github.io/Comment_system/
+Вы можете посмотреть это здесь - https://danielpetelin.github.io/Comment_system/
