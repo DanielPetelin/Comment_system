@@ -1,4 +1,5 @@
 var comments = [];
+loadComments();
 
 document.getElementById('comment-add').onclick = function() {
     event.preventDefault();
@@ -19,6 +20,11 @@ document.getElementById('comment-add').onclick = function() {
 
 function saveComments() {
     localStorage.setItem('comments', JSON.stringify(comments));
+};
+
+function loadComments() {
+    if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
+    showComments();
 };
 
 function showComments() {
